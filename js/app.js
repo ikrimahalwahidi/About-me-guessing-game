@@ -139,57 +139,138 @@
 //         console.log('sorry we cant');
 //         break;
 // }
-let userName=prompt("what's your name please?");
-alert('welcome to my page '+ userName);
-confirm('please answer the question below')
-
-alert('please answer with only yes/y or no/n')
 
 
-let fruite=prompt("do i like a mango?");
-fruite=fruite.toLowerCase();
-if (fruite==='yes'|| fruite === 'y'){
-
-alert("right i like it much");
-
-}else if (fruite==='no'|| fruite === 'n') {
-alert("try it its a Delicious");
-
-}
 
 
-let time=prompt("do i prefere 9 am to take a lecture ?");
-time=time.toLowerCase();
-if (time==='yes'|| time === 'y'){
+// let userName=prompt("what's your name please?");
+// alert('welcome to my page '+ userName);
+// confirm('please answer the question below')
 
-alert("very early");
-
-}else if (time==='no'|| time === 'n') {
-alert("that's much good");
-
-}
+// alert('please answer with only yes/y or no/n')
 
 
-let placeOfBirth=prompt("are i born in amman ?");
-placeOfBirth=placeOfBirth.toLowerCase();
-if (placeOfBirth==='yes'|| placeOfBirth === 'y'){
+// let fruite=prompt("do i like a mango?");
+// fruite=fruite.toLowerCase();
+// if (fruite==='yes'|| fruite === 'y'){
 
-alert("that's right");
+// alert("right i like it much");
 
-}else if (placeOfBirth==='no'|| placeOfBirth === 'n') {
-alert("that's wrong");
+// }else if (fruite==='no'|| fruite === 'n') {
+// alert("try it its a Delicious");
 
-}
+// }
 
-let travel=prompt("doi like a travel ?");
-travel=travel.toLowerCase();
-if (travel==='yes'|| travel === 'y'){
 
-alert("that's right");
+// let time=prompt("do i prefere 9 am to take a lecture ?");
+// time=time.toLowerCase();
+// if (time==='yes'|| time === 'y'){
 
-}else if (travel==='no'|| travel === 'n') {
-alert("you should to try traviling");
+// alert("very early");
 
-}
+// }else if (time==='no'|| time === 'n') {
+// alert("that's much good");
 
-alert(`thank you  and see soon ${userName}`);
+// }
+
+
+// let placeOfBirth=prompt("are i born in amman ?");
+// placeOfBirth=placeOfBirth.toLowerCase();
+// if (placeOfBirth==='yes'|| placeOfBirth === 'y'){
+
+// alert("that's right");
+
+// }else if (placeOfBirth==='no'|| placeOfBirth === 'n') {
+// alert("that's wrong");
+
+// }
+
+// let travel=prompt("doi like a travel ?");
+// travel=travel.toLowerCase();
+// if (travel==='yes'|| travel === 'y'){
+
+// alert("that's right");
+
+// }else if (travel==='no'|| travel === 'n') {
+// alert("you should to try traviling");
+
+// }
+
+// alert(`thank you  and see soon ${userName}`);
+
+
+// alert("you have 4 tries only");
+// let guess = prompt("let's play with guesses a number between (1-10)");
+
+// let num = 7
+
+// for (let i = 0; i < 4; i++) {
+//     if (i > 7) {
+//         prompt("too high , try again please");
+//        break;
+//     } else if (i < 7) {
+//         prompt("too low , try again please");
+//         break;
+//     } else if (i == 7) {
+//         prompt("you are right");
+//         break;
+//     }
+// }
+
+
+
+
+alert('Welcome to guess num 6');
+
+alert("you have 4 tries only");
+let guess = prompt("let's play with guesses a number between (1-10)");
+    var counter = 1;
+    if (counter === 5) {
+        alert('Sorry you run out of guesses');
+    }
+    while (counter < 5 && number !== 10) {
+        var number = prompt('Guess my favorite number');
+        if (number > 10) {
+            alert(' too high! try again please');
+            counter++;
+        } else if (number < 10) {
+            alert(' too low! try again please');
+            counter++;
+        }
+    }
+    if (number === 10) {
+        alert('That is correct! My favorite number is 10!');
+        score++;
+        counter = 5;
+    } else if (number != 10) {
+        alert('the correct answer is 10');
+    }
+
+
+
+
+
+
+
+// alert('Welcome to guess num 7');
+
+// var userFavPlayers = ['pirlo'];
+
+// for (var i = 0; i < 6; i++) {
+//     var userAnsw = prompt('Can you guess my favorite fruit?messi , ronaldo , zidan , inzage , pirlo');
+//     var guess = userAnsw.toLowerCase();
+
+//     for (var j = 0; j < userFavPlayers.length; j++) {
+//         if (guess === userFavPlayers[j]) {
+//             alert('great you got it right!');
+//             score++;
+//             i = 6;
+//             break;
+//         }
+//     }
+//     if (i !== 6) {
+//         alert('Sorry , try again');
+//     }
+// }
+// alert('My favorite player is : pirlo');
+// alert('Good Job!, You got ' + score + ' correct answers!');

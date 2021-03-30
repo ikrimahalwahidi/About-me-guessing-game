@@ -19,7 +19,19 @@ header nav{
     width: 30%;
     margin-top: 20px;
 }
-footer{
+header nav ul li{
+    display: inline-block;
+    margin-left: 5%;
+    
+ 
+
+}
+header nav ul li a{
+    color: #0a043c;
+    text-decoration: none;
+    font-weight: 800;
+    
+footer {
     height: 100px;
     color:#0a043c; 
     background-color:#ffe3de;
