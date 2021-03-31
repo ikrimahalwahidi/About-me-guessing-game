@@ -1,6 +1,6 @@
 'use strict'
 
-
+let score = 0;
 
 // let feeling = confirm('are you understand lecture');
 // if (feeling === true) {
@@ -141,13 +141,13 @@
 // }
 
 
-
+function question1(){
 
 let userName = prompt("what's your name please?");
 alert('welcome to my page ' + userName);
-confirm('please answer the question below')
+confirm('please answer the question below');
 
-alert('please answer with only yes/y or no/n')
+alert('please answer with only yes/y or no/n');
 
 
 let fruite = prompt("do i like a mango?");
@@ -160,7 +160,9 @@ if (fruite === 'yes' || fruite === 'y') {
     alert("try it its a Delicious");
 
 }
+}
 
+question1();
 
 let time = prompt("do i prefere 9 am to take a lecture ?");
 time = time.toLowerCase();
@@ -202,14 +204,49 @@ alert(`thank you  and see soon ${userName}`);
 
 
 
+
 alert('Welcome to guess num 6');
 
 alert("you have 4 tries only");
-let guess = prompt("let's play with guesses a number between (1-10)");
-var counter = 1;
-if (counter === 5) {
-    alert('Sorry you run out of guesses');
+
+let guess = 0;
+
+let currectNumber = 5;
+
+for (let i = 0; i < 4; i++) {
+
+
+    guess = prompt("let's play with guesses a number between (1-10)");
+    guess = parseInt(guess);
+    if (guess === currectNumber) {
+        alert("yes , you are right ");
+        break;
+    }
+    else if (guess < currectNumber) {
+        alert("too low try again please ");
+
+    } else if (guess > currectNumber) {
+        alert("too high try again please ");
+    }
+
+    if (i === 3) {
+        alert(`you out of tries , the currect answer is ${currectNumber} !`);
+    }
+
+
 }
+
+
+
+//var counter = 1;
+/*if (counter === 5) {
+    alert('Sorry you run out of guesses');
+}*/
+
+
+
+
+/*
 while (counter < 5 && number !== 10) {
     var number = prompt('Guess my favorite number');
     if (number > 10) {
@@ -228,28 +265,45 @@ if (number === 10) {
     alert('the correct answer is 10');
 }
 
+*/
 
 
 
 alert('Welcome to guess num 7');
 
-var userFavPlayers = ['pirlo'];
+let userFavPlayers = ['pirlo', "messi", "ronaldo", "zidan"];
+//xczxc
+//asdasd
+//zidan
 
-for (var i = 0; i < 6; i++) {
-    var userAnsw = prompt('Can you guess my favoriteplayer?messi , ronaldo , zidan , inzage , pirlo');
-    var guess = userAnsw.toLowerCase();
 
-    for (var j = 0; j < userFavPlayers.length; j++) {
-        if (guess === userFavPlayers[j]) {
-            alert('great you got it right!');
-            score++;
-            i = 6;
+let exitOutLoops = false;
+let userAnsw;
+
+let myFavP= "";
+for (let i = 0; i < 6; i++) {
+    userAnsw = prompt('Can you guess my favourite player?');
+    userAnsw = userAnsw.toLowerCase();
+
+    for (let j = 0; j < userFavPlayers.length; j++) {
+        if (userAnsw === userFavPlayers[j]) {
+            
+            //score++;
+            myFavP = userFavPlayers[j] ;
+            exitOutLoops = true;
+            alert(`great you got it right ${myFavP} one of my favourite player and all these ${userFavPlayers}  !`);
             break;
         }
+
+    } if (exitOutLoops) {
+        break;
     }
-    if (i !== 6) {
-        alert('Sorry , try again');
+
+    userAnsw = prompt("Sorry , try again");
+    if (i === 0) {
+        alert("sorry you ran out of tries");
     }
 }
+
 alert('My favorite player is : pirlo');
 alert('Good Job!, You got ' + score + ' correct answers!');
