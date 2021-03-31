@@ -141,7 +141,7 @@ let score = 0;
 // }
 
 
-function question1(){
+
 
 let userName = prompt("what's your name please?");
 alert('welcome to my page ' + userName);
@@ -149,6 +149,8 @@ confirm('please answer the question below');
 
 alert('please answer with only yes/y or no/n');
 
+
+function question1(){
 
 let fruite = prompt("do i like a mango?");
 fruite = fruite.toLowerCase();
@@ -164,6 +166,10 @@ if (fruite === 'yes' || fruite === 'y') {
 
 question1();
 
+
+function question2(){
+
+
 let time = prompt("do i prefere 9 am to take a lecture ?");
 time = time.toLowerCase();
 if (time === 'yes' || time === 'y') {
@@ -174,6 +180,8 @@ if (time === 'yes' || time === 'y') {
     alert("that's much good");
 
 }
+}
+question2();
 
 
 let placeOfBirth = prompt("are i born in amman ?");
