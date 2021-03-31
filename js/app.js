@@ -223,6 +223,11 @@ alert('Welcome to guess num 6');
 
 alert("you have 4 tries only");
 
+function question5(){
+
+
+
+
 let guess = 0;
 
 let currectNumber = 5;
@@ -249,6 +254,10 @@ for (let i = 0; i < 4; i++) {
 
 
 }
+
+}
+
+question5();
 
 
 
