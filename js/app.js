@@ -228,12 +228,15 @@ if (number === 10) {
     alert('the correct answer is 10');
 }
 
+
+
+
 alert('Welcome to guess num 7');
 
 var userFavPlayers = ['pirlo'];
 
 for (var i = 0; i < 6; i++) {
-    var userAnsw = prompt('Can you guess my favorite fruit?messi , ronaldo , zidan , inzage , pirlo');
+    var userAnsw = prompt('Can you guess my favoriteplayer?messi , ronaldo , zidan , inzage , pirlo');
     var guess = userAnsw.toLowerCase();
 
     for (var j = 0; j < userFavPlayers.length; j++) {
