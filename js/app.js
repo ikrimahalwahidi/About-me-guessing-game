@@ -141,7 +141,7 @@ let score = 0;
 // }
 
 
-
+function question7(){
 
 let userName = prompt("what's your name please?");
 alert('welcome to my page ' + userName);
@@ -149,6 +149,9 @@ confirm('please answer the question below');
 
 alert('please answer with only yes/y or no/n');
 
+}
+
+question7();
 
 function question1(){
 
@@ -331,6 +334,6 @@ for (let i = 0; i < 6; i++) {
 alert('My favorite player is : pirlo');
 
 }
-
+}
 question6();
 alert('Good Job!, You got ' + score + ' correct answers!');
