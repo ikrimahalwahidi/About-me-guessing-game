@@ -290,7 +290,7 @@ if (number === 10) {
 
 */
 
-
+function question6(){
 
 alert('Welcome to guess num 7');
 
@@ -329,4 +329,8 @@ for (let i = 0; i < 6; i++) {
 }
 
 alert('My favorite player is : pirlo');
+
+}
+
+question6();
 alert('Good Job!, You got ' + score + ' correct answers!');
