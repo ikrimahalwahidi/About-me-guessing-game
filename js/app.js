@@ -184,6 +184,8 @@ if (time === 'yes' || time === 'y') {
 question2();
 
 
+function question3(){
+
 let placeOfBirth = prompt("are i born in amman ?");
 placeOfBirth = placeOfBirth.toLowerCase();
 if (placeOfBirth === 'yes' || placeOfBirth === 'y') {
@@ -194,6 +196,8 @@ if (placeOfBirth === 'yes' || placeOfBirth === 'y') {
     alert("that's wrong");
 
 }
+}
+question3();
 
 let travel = prompt("doi like a travel ?");
 travel = travel.toLowerCase();
