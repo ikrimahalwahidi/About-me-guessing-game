@@ -199,6 +199,8 @@ if (placeOfBirth === 'yes' || placeOfBirth === 'y') {
 }
 question3();
 
+function question4(){
+
 let travel = prompt("doi like a travel ?");
 travel = travel.toLowerCase();
 if (travel === 'yes' || travel === 'y') {
@@ -210,7 +212,7 @@ if (travel === 'yes' || travel === 'y') {
 
 }
 
-alert(`thank you  and see soon ${userName}`);
+question4();
 
 
 
