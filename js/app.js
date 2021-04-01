@@ -143,90 +143,90 @@
 
 
 
-let userName = prompt("what's your name please?");
-alert('welcome to my page ' + userName);
-confirm('please answer the question below')
+// let userName = prompt("what's your name please?");
+// alert('welcome to my page ' + userName);
+// confirm('please answer the question below')
 
-alert('please answer with only yes/y or no/n')
-
-
-let fruite = prompt("do i like a mango?");
-fruite = fruite.toLowerCase();
-if (fruite === 'yes' || fruite === 'y') {
-
-    alert("right i like it much");
-
-} else if (fruite === 'no' || fruite === 'n') {
-    alert("try it its a Delicious");
-
-}
+// alert('please answer with only yes/y or no/n')
 
 
-let time = prompt("do i prefere 9 am to take a lecture ?");
-time = time.toLowerCase();
-if (time === 'yes' || time === 'y') {
+// let fruite = prompt("do i like a mango?");
+// fruite = fruite.toLowerCase();
+// if (fruite === 'yes' || fruite === 'y') {
 
-    alert("very early");
+//     alert("right i like it much");
 
-} else if (time === 'no' || time === 'n') {
-    alert("that's much good");
+// } else if (fruite === 'no' || fruite === 'n') {
+//     alert("try it its a Delicious");
 
-}
-
-
-let placeOfBirth = prompt("are i born in amman ?");
-placeOfBirth = placeOfBirth.toLowerCase();
-if (placeOfBirth === 'yes' || placeOfBirth === 'y') {
-
-    alert("that's right");
-
-} else if (placeOfBirth === 'no' || placeOfBirth === 'n') {
-    alert("that's wrong");
-
-}
-
-let travel = prompt("doi like a travel ?");
-travel = travel.toLowerCase();
-if (travel === 'yes' || travel === 'y') {
-
-    alert("that's right");
-
-} else if (travel === 'no' || travel === 'n') {
-    alert("you should to try traviling");
-
-}
-
-alert(`thank you  and see soon ${userName}`);
+// }
 
 
+// let time = prompt("do i prefere 9 am to take a lecture ?");
+// time = time.toLowerCase();
+// if (time === 'yes' || time === 'y') {
+
+//     alert("very early");
+
+// } else if (time === 'no' || time === 'n') {
+//     alert("that's much good");
+
+// }
+
+
+// let placeOfBirth = prompt("are i born in amman ?");
+// placeOfBirth = placeOfBirth.toLowerCase();
+// if (placeOfBirth === 'yes' || placeOfBirth === 'y') {
+
+//     alert("that's right");
+
+// } else if (placeOfBirth === 'no' || placeOfBirth === 'n') {
+//     alert("that's wrong");
+
+// }
+
+// let travel = prompt("doi like a travel ?");
+// travel = travel.toLowerCase();
+// if (travel === 'yes' || travel === 'y') {
+
+//     alert("that's right");
+
+// } else if (travel === 'no' || travel === 'n') {
+//     alert("you should to try traviling");
+
+// }
+
+// alert(`thank you  and see soon ${userName}`);
 
 
 
-alert('Welcome to guess num 6');
 
-alert("you have 4 tries only");
-let guess = prompt("let's play with guesses a number between (1-10)");
-var counter = 1;
-if (counter === 5) {
-    alert('Sorry you run out of guesses');
-}
-while (counter < 5 && number !== 10) {
-    var number = prompt('Guess my favorite number');
-    if (number > 10) {
-        alert(' too high! try again please');
-        counter++;
-    } else if (number < 10) {
-        alert(' too low! try again please');
-        counter++;
-    }
-}
-if (number === 10) {
-    alert('That is correct! My favorite number is 10!');
-    score++;
-    counter = 5;
-} else if (number != 10) {
-    alert('the correct answer is 10');
-}
+
+// alert('Welcome to guess num 6');
+
+// alert("you have 4 tries only");
+// let guess = prompt("let's play with guesses a number between (1-10)");
+// var counter = 1;
+// if (counter === 5) {
+//     alert('Sorry you run out of guesses');
+// }
+// while (counter < 5 && number !== 10) {
+//     var number = prompt('Guess my favorite number');
+//     if (number > 10) {
+//         alert(' too high! try again please');
+//         counter++;
+//     } else if (number < 10) {
+//         alert(' too low! try again please');
+//         counter++;
+//     }
+// }
+// if (number === 10) {
+//     alert('That is correct! My favorite number is 10!');
+//     score++;
+//     counter = 5;
+// } else if (number != 10) {
+//     alert('the correct answer is 10');
+// }
 
 
 
